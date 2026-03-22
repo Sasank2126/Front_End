@@ -1,0 +1,9 @@
+body {
+    background-color: pink;
+    background-image: url(""), url("https://png.pngtree.com/png-vector/20250803/ourmid/pngtree-adorable-chibi-radha-krishna-dancing-together-with-flowers-png-image_16821619.webp");
+    background-repeat: no-repeat;
+    background-position: left, right;
+
+    background-attachment: fixed;
+    background-size: 30%;
+}
