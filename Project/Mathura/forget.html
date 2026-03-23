@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Change Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: rgb(210, 224, 235);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 400px;
+            max-width: 90%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+            border: 2px solid #0f4c3a;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .form-field {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-field input {
+            padding: 12px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            width: 80%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="parent" action="./login.html">
+        <h2>Password Change Page</h2>
+
+        <div class="form-field">
+            <input type="email" placeholder="Enter your email" name="email" required />
+        </div>
+
+        <div class="form-field">
+            <input type="password" placeholder="Enter your new password" name="new_password" required />
+        </div>
+
+        <div class="form-field">
+            <input type="password" placeholder="Re-enter your new password" name="new_password" required />
+        </div>
+
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>

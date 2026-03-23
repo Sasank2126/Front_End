@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: rgb(210, 224, 235);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 500px;
+            max-width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+            border: 2px solid #0f4c3a;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form-field {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-field label {
+            width: 80%;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form-field input[type="text"],
+        .form-field input[type="email"],
+        .form-field input[type="password"],
+        .form-field input[type="tel"],
+        .form-field input[type="date"],
+        .form-field input[type="file"],
+        .form-field textarea,
+        .form-field select {
+            padding: 12px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .form-field textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .radio-checkbox-group {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .radio-checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .radio-checkbox-item input {
+            margin: 0;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            width: 80%;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <form class="parent" action="./login.html">
+        <h1>Registration Form</h1>
+
+        <div class="form-field">
+            <label for="name">Enter your Name</label>
+            <input type="text" placeholder="Enter your name" id="name" name="name" required />
+        </div>
+
+        <div class="form-field">
+            <label for="email">Enter your Email</label>
+            <input type="email" placeholder="Enter your email" id="email" name="email" required />
+        </div>
+
+        <div class="form-field">
+            <label for="password">Enter your Password</label>
+            <input type="password" placeholder="Enter your password" id="password" name="password" required />
+        </div>
+
+        <div class="form-field">
+            <label for="number">Enter your phone number</label>
+            <input type="tel" placeholder="Enter your phone number" id="number" name="number" required />
+        </div>
+
+        <div class="form-field">
+            <label for="address">Enter your address</label>
+            <textarea name="address" id="address" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <div class="form-field">
+            <label>Select your gender</label>
+            <div class="radio-checkbox-group">
+                <div class="radio-checkbox-item">
+                    <input type="radio" id="gmale" name="gender" value="Male" required />
+                    <label for="gmale" style="width: auto; margin: 0; font-weight: normal;">Male</label>
+                </div>
+                <div class="radio-checkbox-item">
+                    <input type="radio" id="gfemale" name="gender" value="Female" required />
+                    <label for="gfemale" style="width: auto; margin: 0; font-weight: normal;">Female</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label for="DOB">Date of Birth</label>
+            <input type="date" id="DOB" name="date" required />
+        </div>
+
+        <div class="form-field">
+            <label for="profile">Upload your image</label>
+            <input type="file" id="profile" required />
+        </div>
+
+        <div class="form-field">
+            <label for="city">City</label>
+            <select name="city" id="city" required>
+                <option value="">Select your city</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Vishakapatanam">Vishkapatanam</option>
+                <option value="Vijaywada">Vijaywada</option>
+            </select>
+        </div>
+
+        <div class="form-field">
+            <label>Select your education background</label>
+            <div class="radio-checkbox-group">
+                <div class="radio-checkbox-item">
+                    <input type="checkbox" name="studies" value="10th" id="g10" />
+                    <label for="g10" style="width: auto; margin: 0; font-weight: normal;">10th</label>
+                </div>
+                <div class="radio-checkbox-item">
+                    <input type="checkbox" name="studies" value="Inter" id="ginter" />
+                    <label for="ginter" style="width: auto; margin: 0; font-weight: normal;">Inter</label>
+                </div>
+                <div class="radio-checkbox-item">
+                    <input type="checkbox" name="studies" value="Diploma" id="gdiploma" />
+                    <label for="gdiploma" style="width: auto; margin: 0; font-weight: normal;">Diploma</label>
+                </div>
+                <div class="radio-checkbox-item">
+                    <input type="checkbox" name="studies" value="Btech" id="gbtech" />
+                    <label for="gbtech" style="width: auto; margin: 0; font-weight: normal;">Btech</label>
+                </div>
+            </div>
+        </div>
+
+        <button>Submit</button>
+
+    </form>
+
+</body>
+
+</html>
