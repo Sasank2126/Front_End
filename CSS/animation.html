@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            background-color: greenyellow;
+            width: 50%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        
+        }
+        p{
+            color: white;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.5s linear;
+        }
+
+        p:hover{
+            
+            /* transform: translate(20px,20px); */
+           /* transform: scale(3,3); */
+           /* transform: skew(45deg,50deg); */
+           transform: rotate(-360deg);
+        }
+
+        .ball{
+            background-color: coral;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            animation: bounce 1.5s ease infinite;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes bounce{
+            0%{
+                top:0px
+            }
+
+            50%{
+                top:180px;
+                transform: translate(50px);
+            }
+            75%{
+                top:180px;
+                transform: translate(0,-50px);
+            }
+            100%{
+                top:0%
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+
+        <p>
+            hello
+        </p>
+    </div> -->
+
+
+    <div class="ball">
+        hello</div>
+</body>
+</html>
